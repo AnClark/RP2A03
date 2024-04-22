@@ -205,7 +205,7 @@ if (APPLE)
     endforeach()
 endif()
 
-if (WIN32)
+if (WIN32 AND MSVC)
     foreach(t ${FORMATS} "Assets" "All" "")
         set(tgt ${CMAKE_PROJECT_NAME})
         if (NOT t STREQUAL "")
